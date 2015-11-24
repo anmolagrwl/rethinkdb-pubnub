@@ -21,10 +21,10 @@ r.connect( {host: 'localhost', port: 28015}, function(err, conn) {
 
             pubnub.publish({  //publishing the updated seat numbers through PubNub, in 'rethinkdb-pubnub' channel
               channel: "rethinkdb-pubnub",
-              message: result.new_val.availability_status, //this is the message payload we are sending
+              message: {"status" : result.new_val.availability_status}, //this is the message payload we are sending
               callback: function(m){console.log(m)}
             });
-            console.log(result.new_val.availability_status);
+            console.log({"status" : result.new_val.availability_status});
         });
     });
 })

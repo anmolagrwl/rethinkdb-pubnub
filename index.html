@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RethinkDB PubNub</title>
+    <script src="index.js" charset="utf-8"></script>
+    <script src="https://cdn.pubnub.com/pubnub-3.7.13.min.js"></script>
+    <script src="jquery.js" charset="utf-8"></script>
+
+    <style>
+      #train-1{
+        margin: auto;
+        display: block;
+        text-align: center;
+      }
+      .available{
+        font-size: 50px;
+      }
+/*     #number{
+  font-size: 50px;
+  color: #006600;
+} */
+    </style>
+
+  </head>
+  <body>
+    <h1>Book Availablity</h1>
+
+    <div id="train-1">
+      <span class="available">Harry Potter Series - <span id="availability_status"></span></span>
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var pubnub = PUBNUB({
+        publish_key   : 'demo',
+        subscribe_key : 'demo'
+    });
+    pubnub.subscribe({
+        channel : "rethinkdb-pubnub",
+        message : function(message){
+          console.log(message);
+          $("#availability_status")[0].innerHTML = message.status;
+        }
+    })
+  });
+  </script>
+
+</html>
