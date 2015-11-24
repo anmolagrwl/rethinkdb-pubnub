@@ -1,0 +1,15 @@
+{
+  "name": "rethink-pubnub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pubnub": "^3.7.16",
+    "rethinkdb": "^2.2.0"
+  }
+}
