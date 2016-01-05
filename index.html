@@ -35,14 +35,13 @@
   <script type="text/javascript">
   $(document).ready(function() {
     var pubnub = PUBNUB({
-        publish_key   : 'demo',
         subscribe_key : 'demo'
     });
     pubnub.subscribe({
-        channel : "rethinkdb-pubnub",
+        channel : "rethinkdb-pubnub", // Subscribing to PubNub's channel
         message : function(message){
           console.log(message);
-          $("#availability_status")[0].innerHTML = message.status;
+          $("#availability_status")[0].innerHTML = message.status; // Embeding status inside the message that's coming through channel and putting it in HTML
         }
     })
   });

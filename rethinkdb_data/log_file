@@ -1,0 +1,24 @@
+2016-01-03T23:33:37.286143000 1.002860s notice: Recursively removing directory /Users/apple/Desktop/Extras/Pubnub Demos/rethinkdb-pubnub/rethinkdb_data/tmp
+2016-01-03T23:33:37.316984000 1.033708s notice: Initializing directory /Users/apple/Desktop/Extras/Pubnub Demos/rethinkdb-pubnub/rethinkdb_data
+2016-01-03T23:33:37.317163000 1.033878s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/apple/Desktop/Extras/Pubnub Demos/rethinkdb-pubnub/rethinkdb_data' did not already exist or is empty.)
+2016-01-03T23:33:37.382043000 1.098761s notice: Running rethinkdb 2.1.1 (CLANG 6.1.0 (clang-602.0.53))...
+2016-01-03T23:33:37.571873000 1.288592s notice: Running on Darwin 14.1.0 x86_64
+2016-01-03T23:33:37.571967000 1.288682s notice: Loading data from directory /Users/apple/Desktop/Extras/Pubnub Demos/rethinkdb-pubnub/rethinkdb_data
+2016-01-03T23:33:39.474379000 3.191148s info: Automatically using cache size of 100 MB
+2016-01-03T23:33:39.474394000 3.191162s warn: Cache size does not leave much memory for server and query overhead (available memory: 414 MB).
+2016-01-03T23:33:39.474402000 3.191170s warn: Cache size is very low and may impact performance.
+2016-01-03T23:33:39.475096000 3.191865s notice: Listening for intracluster connections on port 29015
+2016-01-03T23:33:39.664987000 3.381757s notice: Listening for client driver connections on port 28015
+2016-01-03T23:33:39.665309000 3.382078s notice: Listening for administrative HTTP connections on port 8080
+2016-01-03T23:33:39.665312000 3.382081s notice: Listening on addresses: 127.0.0.1, ::1
+2016-01-03T23:33:39.665322000 3.382090s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-01-03T23:33:39.665324000 3.382093s notice: Server ready, "Anmols_MacBook_Pro_local_5fk" 7ef277a2-366f-48ec-b91c-7926b0934baf
+2016-01-03T23:33:43.597288000 7.314111s notice: A newer version of the RethinkDB server is available: 2.2.2. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-01-03T23:33:55.779250000 19.496289s info: Table bb03bdbc-1bdf-491d-bf67-5cf221ecc596: Added replica on this server.
+2016-01-03T23:33:56.960732000 20.677771s info: Table bb03bdbc-1bdf-491d-bf67-5cf221ecc596: Starting a new Raft election for term 1.
+2016-01-03T23:33:58.282245000 21.999311s info: Table bb03bdbc-1bdf-491d-bf67-5cf221ecc596: This server is Raft leader for term 1. Latest log index is 0.
+2016-01-03T23:40:42.163749000 425.887493s notice: Server got SIGINT from pid 5194, uid 501; shutting down...
+2016-01-03T23:40:42.163868000 425.887611s notice: Shutting down client connections...
+2016-01-03T23:40:42.164017000 425.887760s notice: All client connections closed.
+2016-01-03T23:40:42.164022000 425.887765s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-01-03T23:40:42.384302000 426.108073s notice: Storage engine shut down.
